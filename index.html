@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="BETTIOUR SECURIA - Sicurezza, sistemi d'allarme, videosorveglianza e assistenza.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>BETTIOUR SECURIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span class="brand-icon">B</span>
+        <span>BETTIOUR <b>SECURIA</b></span>
+      </a>
+      <button class="install-btn" id="installBtn" hidden>Installa</button>
+    </header>
+
+    <main>
+      <section class="screen active" id="home">
+        <div class="hero-card">
+          <div class="status"><span></span> SICUREZZA ATTIVA · 24/7</div>
+          <h1>La tua sicurezza,<br><em>sempre con te.</em></h1>
+          <p>Sistemi d'allarme, videosorveglianza e soluzioni smart per proteggere ciò che conta davvero.</p>
+          <div class="hero-buttons">
+            <a class="primary" href="#preventivo">Richiedi preventivo <b>→</b></a>
+            <a class="secondary" href="https://wa.me/393514436993" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="protection-card">
+          <div>
+            <small>STATO DEL SERVIZIO</small>
+            <strong><span class="online-dot"></span> Protezione attiva</strong>
+          </div>
+          <div class="shield">✓</div>
+        </div>
+
+        <h2>Servizi</h2>
+        <div class="service-grid">
+          <a href="#servizi" class="service"><span>🔐</span><b>Antifurto</b><small>Protezione intelligente</small></a>
+          <a href="#servizi" class="service"><span>📹</span><b>Videosorveglianza</b><small>Controllo da remoto</small></a>
+          <a href="#servizi" class="service"><span>📱</span><b>Smart Security</b><small>Gestione da smartphone</small></a>
+          <a href="#servizi" class="service"><span>🔥</span><b>Antincendio</b><small>Rilevazione tempestiva</small></a>
+        </div>
+
+        <a class="call-card" href="tel:+393514436993">
+          <span class="call-icon">☎</span>
+          <span><small>Parla con noi</small><b>351 443 6993</b></span>
+          <strong>→</strong>
+        </a>
+      </section>
+
+      <section class="screen" id="servizi">
+        <div class="page-head">
+          <div class="eyebrow">BETTIOUR SECURIA</div>
+          <h1>I nostri servizi</h1>
+          <p>Soluzioni progettate per abitazioni, attività e ambienti professionali.</p>
+        </div>
+
+        <div class="large-services">
+          <article><span>🔐</span><h3>Sistemi Antifurto</h3><p>Impianti d'allarme personalizzati in base agli ambienti e al livello di protezione richiesto.</p><a href="#preventivo">Richiedi informazioni →</a></article>
+          <article><span>📹</span><h3>Videosorveglianza</h3><p>Telecamere ad alta definizione e controllo da remoto per monitorare ciò che conta.</p><a href="#preventivo">Richiedi informazioni →</a></article>
+          <article><span>📱</span><h3>Smart Security</h3><p>Gestione del sistema, notifiche e controllo direttamente dal tuo smartphone.</p><a href="#preventivo">Richiedi informazioni →</a></article>
+          <article><span>🔥</span><h3>Rilevazione Incendio</h3><p>Soluzioni per la rilevazione di fumo e incendio in diversi ambienti.</p><a href="#preventivo">Richiedi informazioni →</a></article>
+          <article><span>🚪</span><h3>Controllo Accessi</h3><p>Gestione e monitoraggio degli accessi in modo semplice e sicuro.</p><a href="#preventivo">Richiedi informazioni →</a></article>
+          <article><span>🛠️</span><h3>Assistenza</h3><p>Supporto per configurazione, manutenzione e gestione dei sistemi.</p><a href="#preventivo">Richiedi informazioni →</a></article>
+        </div>
+      </section>
+
+      <section class="screen" id="preventivo">
+        <div class="page-head">
+          <div class="eyebrow">CONTATTACI</div>
+          <h1>Richiedi un preventivo</h1>
+          <p>Compila il modulo. La richiesta sarà inviata tramite il sistema di contatto del sito.</p>
+        </div>
+
+        <form id="quoteForm" action="https://formspree.io/f/mppwvbbv" method="POST">
+          <input type="hidden" name="_subject" value="Nuova richiesta da App — BETTIOUR SECURIA">
+          <label>Nome e cognome<input name="name" required placeholder="Il tuo nome"></label>
+          <label>Telefono<input name="phone" type="tel" required placeholder="351..."></label>
+          <label>Email<input name="email" type="email" required placeholder="nome@email.com"></label>
+          <label>Servizio
+            <select name="service" required>
+              <option value="">Seleziona</option>
+              <option>Sistema antifurto</option>
+              <option>Videosorveglianza</option>
+              <option>Smart Security</option>
+              <option>Rilevazione incendio</option>
+              <option>Controllo accessi</option>
+              <option>Assistenza</option>
+              <option>Più servizi</option>
+              <option>Non so ancora</option>
+            </select>
+          </label>
+          <label>Messaggio<textarea name="message" rows="5" required placeholder="Cosa vuoi proteggere?"></textarea></label>
+          <button class="primary full" type="submit">Invia richiesta <b>→</b></button>
+          <div id="formMessage" class="form-message"></div>
+        </form>
+      </section>
+
+      <section class="screen" id="contatti">
+        <div class="page-head">
+          <div class="eyebrow">BETTIOUR SECURIA</div>
+          <h1>Contatti</h1>
+          <p>Scegli il modo più comodo per contattarci.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="tel:+393514436993"><span>☎</span><div><small>Telefono</small><b>351 443 6993</b></div><strong>→</strong></a>
+          <a href="https://wa.me/393514436993" target="_blank" rel="noopener"><span>◉</span><div><small>WhatsApp</small><b>Scrivici direttamente</b></div><strong>→</strong></a>
+          <a href="#preventivo"><span>✉</span><div><small>Preventivo</small><b>Invia una richiesta</b></div><strong>→</strong></a>
+        </div>
+        <div class="about-card">
+          <div class="shield big">✓</div>
+          <h2>Proteggiamo ciò che conta davvero.</h2>
+          <p>Sicurezza moderna, soluzioni personalizzate e tecnologia pensata per essere semplice da utilizzare.</p>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="#home" data-nav="home"><span>⌂</span><small>Home</small></a>
+      <a href="#servizi" data-nav="servizi"><span>▦</span><small>Servizi</small></a>
+      <a href="#preventivo" data-nav="preventivo" class="nav-main"><span>+</span><small>Preventivo</small></a>
+      <a href="#contatti" data-nav="contatti"><span>☎</span><small>Contatti</small></a>
+    </nav>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>

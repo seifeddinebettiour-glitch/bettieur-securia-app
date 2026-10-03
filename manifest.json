@@ -1,0 +1,19 @@
+{
+  "name": "BETTIOUR SECURIA",
+  "short_name": "SECURIA",
+  "description": "BETTIOUR SECURIA - Sicurezza e sistemi d'allarme.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050b14",
+  "theme_color": "#07111f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
